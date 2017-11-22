@@ -28,7 +28,6 @@ public class PanelActivity extends AppCompatActivity {
             @Override
             public void onDrawerOpened(View drawerView) {
                 super.onDrawerOpened(drawerView);
-                getActionBar().setTitle("Drawer");
             }
         };
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
