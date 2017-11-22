@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SkillIndia.iml" filepath="$PROJECT_DIR$/SkillIndia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Skill-India-App.iml" filepath="$PROJECT_DIR$/Skill-India-App.iml" />
+      <module fileurl="file://G:\Projects\SkillIndia\Skill-India-App\SkillIndia.iml" filepath="G:\Projects\SkillIndia\Skill-India-App\SkillIndia.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://G:\Projects\SkillIndia\Skill-India-App\app\app.iml" filepath="G:\Projects\SkillIndia\Skill-India-App\app\app.iml" />
     </modules>
   </component>
 </project>
