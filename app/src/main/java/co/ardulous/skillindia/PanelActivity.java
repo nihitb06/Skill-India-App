@@ -74,6 +74,11 @@ public class PanelActivity extends AppCompatActivity implements NavigationView.O
                 break;
 
             case R.id.share:
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, "Hey!!I installed the Skill India App.It is great.\nInstall it here:<Address>");
+                sendIntent.setType("text/plain");
+                startActivity(Intent.createChooser(sendIntent, "Share using"));
                 break;
 
             default:
