@@ -1,5 +1,6 @@
 package co.ardulous.skillindia;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -47,6 +48,8 @@ public class PanelActivity extends AppCompatActivity implements NavigationView.O
         switch (item.getItemId()) {
 
             case R.id.about:
+                Intent intent = new Intent(this,AboutActivity.class);
+                startActivity(intent);
                 break;
 
             case R.id.contribute:
