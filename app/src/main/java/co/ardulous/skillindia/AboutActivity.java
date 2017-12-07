@@ -1,5 +1,6 @@
 package co.ardulous.skillindia;
 
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -19,6 +20,14 @@ public class AboutActivity extends AppCompatActivity {
         VideoFragment videoFragment = new VideoFragment();
         getSupportFragmentManager().beginTransaction().replace(R.id.main, videoFragment).addToBackStack(null).commit();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent=new Intent(this,PanelActivity.class);
+        startActivity(intent);
     }
 
     @Override
