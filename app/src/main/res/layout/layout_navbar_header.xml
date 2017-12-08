@@ -1,38 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/nav_header_height"
-    android:background="@drawable/side_nav_background"
-    android:orientation="vertical"
-    android:gravity="bottom">
+    android:layout_height="@dimen/nav_header_height">
 
     <ImageView
-        android:id="@+id/profile"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="@dimen/nav_header_horizontal_spacing"
-        android:layout_marginBottom="@dimen/nav_header_vertical_spacing"
-        android:src="@drawable/ic_account_circle_green_500_24dp"
-        android:contentDescription="@string/profile_photo_desc" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg" />
 
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/nav_header_horizontal_spacing"
-        android:layout_marginBottom="@dimen/nav_header_vertical_spacing"
-        android:text="@string/name_sample"
-        android:textColor="#ffffff"
-        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/nav_header_horizontal_spacing"
-        android:layout_marginBottom="@dimen/nav_header_vertical_spacing"
-        android:text="@string/email_sample"
-        android:textColor="#ffffff" />
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="@dimen/nav_header_vertical_spacing"
+            android:layout_marginStart="@dimen/nav_header_horizontal_spacing"
+            android:contentDescription="@string/profile_photo_desc"
+            android:src="@drawable/userlogo" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/nav_header_vertical_spacing"
+            android:layout_marginStart="@dimen/nav_header_horizontal_spacing"
+            android:text="@string/name_sample"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/nav_header_vertical_spacing"
+            android:layout_marginStart="@dimen/nav_header_horizontal_spacing"
+            android:text="@string/email_sample"
+            android:textColor="#000000" />
+    </LinearLayout>
+</RelativeLayout>
