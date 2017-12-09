@@ -33,6 +33,7 @@
     <string name="title_logo">CHALO KAAM KAREIN</string>
     <string name="btn_skip_intro">Skip Intro</string>
     <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="image_people">Placeholder supporting image in about page for when app is without internet.</string>
 
     <!-- Misc Strings -->
     <string name="app_address">https://play.google.com/store/apps/details?id=co.ardulous.skillindia</string>
