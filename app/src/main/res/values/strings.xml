@@ -27,4 +27,13 @@
     <string name="business">Business</string>
     <string name="communication">Communication</string>
 
+
+    <!--Player and About Content-->
+    <string name="about_us_content">Skill India is a campaign launched by Prime Minister Narendra Damodardas Modi on 15 July 2015 which aim to train over 40 crore (400 million) people in India in different skills by 2022. It includes various initiatives of the government like "National Skill Development Mission", "National Policy for Skill Development and Entrepreneurship, 2015", "Pradhan Mantri Kaushal Vikas Yojana (PMKVY)" and the "Skill Loan scheme".</string>
+    <string name="title_logo">CHALO KAAM KAREIN</string>
+    <string name="btn_skip_intro">Skip Intro</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -1,5 +1,6 @@
 package co.ardulous.skillindia;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -47,6 +48,7 @@ public class PanelActivity extends AppCompatActivity implements NavigationView.O
         switch (item.getItemId()) {
 
             case R.id.about:
+                startActivity(new Intent(this,AboutActivity.class));
                 break;
 
             case R.id.contribute:
@@ -71,6 +73,14 @@ public class PanelActivity extends AppCompatActivity implements NavigationView.O
                 break;
 
             case R.id.share:
+<<<<<<< HEAD
+=======
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, "Hey!!I installed the Skill India App.It is great.\nInstall it here:<Address>");
+                sendIntent.setType("text/plain");
+                startActivity(Intent.createChooser(sendIntent, "Share using"));
+>>>>>>> upstream/master
                 break;
 
             default:
