@@ -9,7 +9,7 @@
         <item
             android:id="@+id/contribute"
             android:title="@string/contribute"
-            android:icon="@drawable/contribute" />
+            android:icon="@drawable/ic_contribute" />
 
         <item
             android:id="@+id/gallery"

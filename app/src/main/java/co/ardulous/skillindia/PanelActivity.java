@@ -48,7 +48,7 @@ public class PanelActivity extends AppCompatActivity implements NavigationView.O
         switch (item.getItemId()) {
 
             case R.id.about:
-                startActivity(new Intent(this,AboutActivity.class));
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragContainer, new AboutFragment()).commit();
                 break;
 
             case R.id.contribute:
@@ -73,14 +73,15 @@ public class PanelActivity extends AppCompatActivity implements NavigationView.O
                 break;
 
             case R.id.share:
-<<<<<<< HEAD
-=======
                 Intent sendIntent = new Intent();
                 sendIntent.setAction(Intent.ACTION_SEND);
-                sendIntent.putExtra(Intent.EXTRA_TEXT, "Hey!!I installed the Skill India App.It is great.\nInstall it here:<Address>");
+                sendIntent.putExtra(
+                        Intent.EXTRA_TEXT,
+                        "Hey!!I installed the Skill India App. It is great.\nInstall it here:\n" +
+                                getString(R.string.app_address)
+                );
                 sendIntent.setType("text/plain");
                 startActivity(Intent.createChooser(sendIntent, "Share using"));
->>>>>>> upstream/master
                 break;
 
             default:

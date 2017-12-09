@@ -13,29 +13,26 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_splashscreen);
 
-<<<<<<< HEAD
         new Handler().postDelayed(new Runnable() {
-=======
-        Thread thread = new Thread() {
             @Override
->>>>>>> upstream/master
             public void run() {
-                super.run();
-                try {
-                    sleep(3000);
-                } catch (InterruptedException ex) {
-                    Log.e("Splash Screen", "Interrupt");
-                } finally {
-                    startActivity(new Intent(MainActivity.this, PanelActivity.class));
-                    finish();
-                }
-            }
-<<<<<<< HEAD
-        }, 3 * 1000);
-=======
-        };
-        thread.start();
->>>>>>> upstream/master
+                Thread delayLoad = new Thread() {
+                    @Override
+                    public void run() {
+                        super.run();
 
+                        try {
+                            sleep(3000);
+                        } catch (InterruptedException ex) {
+                            Log.e("Splash Screen", "Interrupt");
+                        } finally {
+                            startActivity(new Intent(MainActivity.this, PanelActivity.class));
+                            finish();
+                        }
+                    }
+                };
+                delayLoad.run();
+            }
+        }, 3*1000);
     }
 }

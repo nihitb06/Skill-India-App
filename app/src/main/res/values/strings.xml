@@ -34,6 +34,9 @@
     <string name="btn_skip_intro">Skip Intro</string>
     <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
 
+    <!-- Misc Strings -->
+    <string name="app_address">https://play.google.com/store/apps/details?id=co.ardulous.skillindia</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -9,14 +9,15 @@
         android:id="@+id/youtube_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
         android:visibility="visible" />
 
     <ImageView
-        android:id="@+id/peoplephoto"
+        android:id="@+id/peoplePhoto"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginTop="16dp"
+        android:visibility="gone"
         android:src="@drawable/people" />
 
     <ScrollView

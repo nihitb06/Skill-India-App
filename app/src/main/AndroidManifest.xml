@@ -26,13 +26,7 @@
         <activity
             android:name=".PanelActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-<<<<<<< HEAD
-=======
-        <activity
-            android:name=".AboutActivity"
-            android:label="@string/about"
-            android:screenOrientation="portrait" />
->>>>>>> upstream/master
+
     </application>
 
 </manifest>
